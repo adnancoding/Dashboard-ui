@@ -36,300 +36,182 @@ function Dashboard() {
         {/* Page Wrapper */}
         <div id="wrapper">
           {/*Sidebar */}
-          <ul className={style} id="accordionSidebar">
-            <a
-              className="sidebar-brand d-flex align-items-center justify-content-center"
-              href="#"
+          <ul className="your-ul-class" id="accordionSidebar">
+      <a
+        className="sidebar-brand d-flex align-items-center justify-content-center"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          fill="currentColor"
+          className="bi bi-nut"
+          viewBox="0 0 16 16"
+        >
+          <path d="m11.42 2 3.428 6-3.428 6H4.58L1.152 8 4.58 2h6.84zM4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1H4.58z" />
+          <path d="M6.848 5.933a2.5 2.5 0 1 0 2.5 4.33 2.5 2.5 0 0 0-2.5-4.33zm-1.78 3.915a3.5 3.5 0 1 1 6.061-3.5 3.5 3.5 0 0 1-6.062 3.5z" />
+        </svg>
+        <div className="sidebar-brand-text mx-3">Dashboard</div>
+      </a>
+
+      {/* Nav Item - Dashboard */}
+      <li className="nav-item active bg">
+        <a className="nav-link" href="index.html">
+          <i className="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+
+      <li className="nav-item">
+        <a
+          className="nav-link collapsed"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapseTwo"
+          aria-expanded="true"
+          aria-controls="collapseTwo"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            className="bi bi-box"
+            viewBox="0 0 16 16"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="14"
+              height="14"
+              rx="3"
+              ry="3"
+              stroke="white"
+              fill="transparent"
+              stroke-width="1"
+            />
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443 .184z" />
+          </svg>
+
+          <span> Products</span>
+          <div
+            id="collapseTwo"
+            className="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div className="bg-white py-2 collapse-inner rounded">
+              <a className="collapse-item" href="buttons.html">
+                Thanks
+              </a>
+              <a className="collapse-item" href="cards.html">
+                For Checking
+              </a>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          className="nav-link collapsed"
+          href="#"
+          data-toggle="collapse"
+          data-target="#collapseUtilities"
+          aria-expanded="true"
+          aria-controls="collapseUtilities"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            className="bi bi-person"
+            viewBox="0 0 16 16"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="14"
+              height="14"
+              rx="3"
+              ry="3"
+              stroke="white"
+              fill="transparent"
+              stroke-width="1"
+            />
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+          </svg>
+
+          <span> Customers</span>
+          <div
+            id="collapseUtilities"
+            className="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div className="bg-white py-2 collapse-inner rounded">
+              <a className="collapse-item" href="buttons.html">
+                Thanks
+              </a>
+              <a className="collapse-item" href="cards.html">
+                For Checking
+              </a>
+            </div>
+          </div>
+        </a>
+      </li>
+      {/* Add similar Nav.Item and NavDropdown for Income, Promote, and Help */}
+      <li className="nav-item bottom">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          className="bi bi-person"
+          viewBox="0 0 16 16"
+        >
+          <rect
+            x="1"
+            y="1"
+            width="14"
+            height="14"
+            rx="3"
+            ry="3"
+            stroke="white"
+            fill="transparent"
+            stroke-width="1"
+          />
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+        </svg>
+        <div className="pfcon">
+          <h6>
+            <b
+              style={{
+                color: "white",
+                fontWeight: "bold",
+              }}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="bi bi-nut"
-                viewBox="0 0 16 16"
-              >
-                <path d="m11.42 2 3.428 6-3.428 6H4.58L1.152 8 4.58 2h6.84zM4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1H4.58z" />
-                <path d="M6.848 5.933a2.5 2.5 0 1 0 2.5 4.33 2.5 2.5 0 0 0-2.5-4.33zm-1.78 3.915a3.5 3.5 0 1 1 6.061-3.5 3.5 3.5 0 0 1-6.062 3.5z" />
-              </svg>
-
-              <div className="sidebar-brand-text mx-3">Dashboard</div>
-            </a>
-
-            {/* Nav Item - Dashboard*/}
-            <li className="nav-item active bg">
-              <a className="nav-link" href="index.html">
-                <i className="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span>
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a
-                className="nav-link collapsed"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="true"
-                aria-controls="collapseTwo"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-box"
-                  viewBox="0 0 16 16"
-                >
-                  <rect
-                    x="1"
-                    y="1"
-                    width="14"
-                    height="14"
-                    rx="3"
-                    ry="3"
-                    stroke="white"
-                    fill="transparent"
-                    stroke-width="1"
-                  />
-                  <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443 .184z" />
-                </svg>
-
-                <span> Products</span>
-                <div
-                  id="collapseTwo"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionSidebar"
-                >
-                  <div className="bg-white py-2 collapse-inner rounded">
-                    <a className="collapse-item" href="buttons.html">
-                      Thanks
-                    </a>
-                    <a className="collapse-item" href="cards.html">
-                      For Checking
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link collapsed"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapseUtilities"
-                aria-expanded="true"
-                aria-controls="collapseUtilities"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-person"
-                  viewBox="0 0 16 16"
-                >
-                  <rect
-                    x="1"
-                    y="1"
-                    width="14"
-                    height="14"
-                    rx="3"
-                    ry="3"
-                    stroke="white"
-                    fill="transparent"
-                    stroke-width="1"
-                  />
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                </svg>
-
-                <span> Customers</span>
-                <div
-                  id="collapseUtilities"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionSidebar"
-                >
-                  <div className="bg-white py-2 collapse-inner rounded">
-                    <a className="collapse-item" href="buttons.html">
-                      Thanks
-                    </a>
-                    <a className="collapse-item" href="cards.html">
-                      For Checking
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link collapsed"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapse3"
-                aria-expanded="true"
-                aria-controls="collapseUtilities"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-wallet"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 3a2 2 0 0 1 2-2h13.5a.5.5 0 0 1 0 1H15v2a1 1 0 0 1 1 1v8.5a1.5 1.5 0 0 1-1.5 1.5h-12A2.5 2.5 0 0 1 0 12.5V3zm1 1.732V12.5A1.5 1.5 0 0 0 2.5 14h12a.5.5 0 0 0 .5-.5V5H2a1.99 1.99 0 0 1-1-.268zM1 3a1 1 0 0 0 1 1h12V2H2a1 1 0 0 0-1 1z" />
-                </svg>
-                <span> Income</span>
-                <div
-                  id="collapse3"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionSidebar"
-                >
-                  <div className="bg-white py-2 collapse-inner rounded">
-                    <a className="collapse-item" href="buttons.html">
-                      Thanks
-                    </a>
-                    <a className="collapse-item" href="cards.html">
-                      For Checking
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                className="nav-link collapsed"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapse4"
-                aria-expanded="true"
-                aria-controls="collapseUtilities"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-percent"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-                </svg>
-
-                <span> Promote</span>
-                <div
-                  id="collapse4"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionSidebar"
-                >
-                  <div className="bg-white py-2 collapse-inner rounded">
-                    <a className="collapse-item" href="buttons.html">
-                      Thanks
-                    </a>
-                    <a className="collapse-item" href="cards.html">
-                      For Checking
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a
-                className="nav-link collapsed"
-                href="#"
-                data-toggle="collapse"
-                data-target="#collapse5"
-                aria-expanded="true"
-                aria-controls="collapseUtilities"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="12" y1="16" x2="12" y2="12" />
-                  <line x1="12" y1="8" x2="12" y2="8" />
-                </svg>
-                <span> Help</span>
-                <div
-                  id="collapse5"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionSidebar"
-                >
-                  <div className="bg-white py-2 collapse-inner rounded">
-                    <a className="collapse-item" href="buttons.html">
-                      Thanks
-                    </a>
-                    <a className="collapse-item" href="cards.html">
-                      For Checking
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li className="nav-item bottom">
-            <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-person"
-                  viewBox="0 0 16 16"
-                >
-                  <rect
-                    x="1"
-                    y="1"
-                    width="14"
-                    height="14"
-                    rx="3"
-                    ry="3"
-                    stroke="white"
-                    fill="transparent"
-                    stroke-width="1"
-                  />
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-                </svg>
-              <div className="pfcon">
-                <h6>
-                  <b
-                    style={{
-                      color: "white",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    Evano
-                  </b>
-                </h6>
-                <span>Project Manager </span>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-caret-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 10a1 1 0 01-.65-.24l-3.5-3a1 1 0 111.3-1.52L8 8.76l2.85-2.52a1 1 0 111.3 1.52l-3.5 3a1 1 0 01-.65.24z"
-                />
-              </svg>
-            </li>
-          </ul>
+              Evano
+            </b>
+          </h6>
+          <span>Project Manager </span>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          className="bi bi-caret-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fillRule="evenodd"
+            d="M8 10a1 1 0 01-.65-.24l-3.5-3a1 1 0 111.3-1.52L8 8.76l2.85-2.52a1 1 0 111.3 1.52l-3.5 3a1 1 0 01-.65.24z"
+          />
+        </svg>
+      </li>
+    </ul>
           {/*End of Sidebar*/}
 
           {/* Content Wrapper*/}
